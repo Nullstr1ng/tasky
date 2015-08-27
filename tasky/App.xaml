@@ -1,0 +1,15 @@
+<Application x:Class="tasky.App" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:local="clr-namespace:tasky" 
+             StartupUri="MainWindow.xaml" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             d1p1:Ignorable="d" 
+             xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:conv="clr-namespace:tasky.Converter"
+             >
+  <Application.Resources>
+    <vm:ViewModelLocator x:Key="Locator" d:IsDataSource="True" xmlns:vm="clr-namespace:tasky.ViewModel" />
+      <conv:Converter_BooleanToVisibility x:Key="boolTovis" />
+  </Application.Resources>
+</Application>
