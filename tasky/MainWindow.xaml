@@ -170,7 +170,7 @@
                                 <StackPanel Margin="5" Orientation="Vertical">
                                     <TextBlock Text="{Binding Main.SelectedTaskDetails.Title}" />
                                     <TextBlock Text=" " />
-                                    <TextBlock Text="{Binding Main.SelectedTaskDetails.ShortDetails}" TextWrapping="Wrap"/>
+                                    <TextBox Text="{Binding Main.SelectedTaskDetails.ShortDetails, Mode=TwoWay}" TextWrapping="Wrap"/>
                                     <TextBlock Text=" " />
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -182,7 +182,7 @@
                                         <Border Height="2" BorderThickness="2" Grid.Column="1" BorderBrush="#0f000000" Background="#7f000000" Margin="5,0,0,0" VerticalAlignment="Center" />
                                     </Grid>
                                     <TextBlock Text=" " />
-                                    <TextBlock Text="{Binding Main.SelectedTaskDetails.Details}" TextWrapping="Wrap"/>
+                                    <TextBox Text="{Binding Main.SelectedTaskDetails.Details, Mode=TwoWay}" TextWrapping="Wrap"/>
                                     <TextBlock Text=" " />
                                     <Grid>
                                         <Grid.ColumnDefinitions>
