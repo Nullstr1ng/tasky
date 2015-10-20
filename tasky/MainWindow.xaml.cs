@@ -18,9 +18,6 @@ namespace tasky
             this.gridTitle.MouseDown += GridTitle_MouseDown;
         }
 
-        // new feature here
-        // changes for test 1
-
         private void GridTitle_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (e.ChangedButton == System.Windows.Input.MouseButton.Left)
@@ -29,12 +26,9 @@ namespace tasky
             }
         }
 
-        // new feature here for test 2
-        // what's new for test 2
-
         private void BtnClose_Click(object sender, RoutedEventArgs e)
         {
-            Process.GetCurrentProcess().Close();
+            Process.GetCurrentProcess().Kill();
         }
 
         private void BtnRestore_Click(object sender, RoutedEventArgs e)
