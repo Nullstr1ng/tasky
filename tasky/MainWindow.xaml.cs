@@ -18,6 +18,8 @@ namespace tasky
             this.gridTitle.MouseDown += GridTitle_MouseDown;
         }
 
+        // new feature here
+
         private void GridTitle_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             if (e.ChangedButton == System.Windows.Input.MouseButton.Left)
