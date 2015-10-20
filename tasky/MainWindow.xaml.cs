@@ -26,6 +26,8 @@ namespace tasky
             }
         }
 
+        // new feature here for test 2
+
         private void BtnClose_Click(object sender, RoutedEventArgs e)
         {
             Process.GetCurrentProcess().Kill();

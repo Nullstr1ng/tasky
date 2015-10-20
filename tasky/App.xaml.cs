@@ -13,5 +13,6 @@ namespace tasky
     /// </summary>
     public partial class App : Application
     {
+        // then changes here
     }
 }
