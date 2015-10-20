@@ -27,10 +27,11 @@ namespace tasky
         }
 
         // new feature here for test 2
+        // what's new for test 2
 
         private void BtnClose_Click(object sender, RoutedEventArgs e)
         {
-            Process.GetCurrentProcess().Kill();
+            Process.GetCurrentProcess().Close();
         }
 
         private void BtnRestore_Click(object sender, RoutedEventArgs e)
